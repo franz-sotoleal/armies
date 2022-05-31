@@ -10,6 +10,6 @@ For a detailed view of the endpoints, see the [documentation](franz-sotoleal.git
 - [x] Train a unit
 - [x] Transform a unit
 
-- [ ] Lifespam of an army
+- [ ] Lifespan of an army
 - [ ] Battles
 - [ ] List the battles for an army
