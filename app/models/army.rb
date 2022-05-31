@@ -11,6 +11,8 @@ class Army < ApplicationRecord
 
   def transform(old_unit, new_unit, cost)
     subtract_coins(cost)
+    return unless valid?
+
     old_unit.destroy
     units << new_unit
   end

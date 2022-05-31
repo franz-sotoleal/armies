@@ -25,8 +25,11 @@ class UnitsController < ApplicationController
 
   # POST /units/1/transform
   def transform
-    if @unit.transform && @army.save
-      render json: @unit
+    @unit.transform
+    return render json: @unit.errors, status: :unprocessable_entity unless @unit.errors.empty?
+
+    if @army.save
+      render json: @army
     else
       render json: @army.errors, status: :unprocessable_entity
     end
