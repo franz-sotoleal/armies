@@ -88,6 +88,7 @@ GEM
       reline (>= 0.2.7)
     diff-lcs (1.5.0)
     digest (3.1.0)
+    dotenv (2.7.6)
     erubi (1.10.0)
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
@@ -222,6 +223,7 @@ DEPENDENCIES
   bootsnap
   byebug (~> 11.1)
   debug
+  dotenv (~> 2.7, >= 2.7.6)
   factory_bot_rails (~> 6.2)
   pg (~> 1.1)
   puma (~> 5.0)
