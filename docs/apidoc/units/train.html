@@ -51,10 +51,10 @@
 
   <h2>Examples</h2>
     <pre class="prettyprint">// Does not find the unit to train
-POST /armies/1143/units/34416/train
+POST /armies/1170/units/35229/train
 404</pre>
     <pre class="prettyprint">// Does not train the unit (not enough coins)
-POST /armies/1146/units/34476/train
+POST /armies/1173/units/35289/train
 422
 {
   &quot;coins&quot;: [
@@ -62,10 +62,10 @@ POST /armies/1146/units/34476/train
   ]
 }</pre>
     <pre class="prettyprint">// Trains a Pikeman
-POST /armies/1141/units/34326/train
+POST /armies/1168/units/35139/train
 200
 {
-  &quot;id&quot;: 34326,
+  &quot;id&quot;: 35139,
   &quot;type&quot;: &quot;PikemanUnit&quot;,
   &quot;strength&quot;: 8
 }</pre>

@@ -51,10 +51,10 @@
 
   <h2>Examples</h2>
     <pre class="prettyprint">// Does not find the unit to transform
-POST /armies/1149/units/34597/transform
+POST /armies/1176/units/35410/transform
 404</pre>
     <pre class="prettyprint">// Does not transform the unit (not enough coins)
-POST /armies/1152/units/34657/transform
+POST /armies/1179/units/35470/transform
 422
 {
   &quot;coins&quot;: [
@@ -62,16 +62,20 @@ POST /armies/1152/units/34657/transform
   ]
 }</pre>
     <pre class="prettyprint">// Does not transform the knight
-POST /armies/1154/units/34746/transform
+POST /armies/1181/units/35558/transform
 422
-{}</pre>
+{
+  &quot;type&quot;: [
+    &quot;Invalid transformation&quot;
+  ]
+}</pre>
     <pre class="prettyprint">// Transforms a pikeman
-POST /armies/1147/units/34506/transform
+POST /armies/1174/units/35319/transform
 200
 {
-  &quot;id&quot;: 34506,
-  &quot;type&quot;: &quot;PikemanUnit&quot;,
-  &quot;strength&quot;: 5
+  &quot;id&quot;: 1174,
+  &quot;type&quot;: &quot;EnglishArmy&quot;,
+  &quot;coins&quot;: 1970
 }</pre>
 
 
