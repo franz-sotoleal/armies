@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API documentation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type='text/css' rel='stylesheet' href='../../apidoc/stylesheets/bundled/bootstrap.min.css'/>
+<link type='text/css' rel='stylesheet' href='../../apidoc/stylesheets/bundled/prettify.css'/>
+<link type='text/css' rel='stylesheet' href='../../apidoc/stylesheets/bundled/bootstrap-responsive.min.css'/>
+  <link type='text/css' rel='stylesheet' href='../../apidoc/stylesheets/application.css'/>
+  <!-- IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id='container'>
+        <ul class='breadcrumb'>
+  <li>
+    <a href='../../apidoc.html'>Armies 1.0</a>
+    <span class='divider'>/</span>
+  </li>
+  <li>
+    <a href='../../apidoc/units.html'>
+      Units
+      
+    </a>
+    <span class='divider'>/</span>
+  </li>
+  <li class='active'>transform</li>
+  
+
+</ul>
+
+  <div class='page-header'>
+    <h1>
+      POST /:id/transform
+      <br>
+      <small>Transforms a Unit</small>
+    </h1>
+  </div>
+
+<div>
+
+  
+
+
+
+
+  <h2>Examples</h2>
+    <pre class="prettyprint">// Does not find the unit to transform
+POST /armies/1149/units/34597/transform
+404</pre>
+    <pre class="prettyprint">// Does not transform the unit (not enough coins)
+POST /armies/1152/units/34657/transform
+422
+{
+  &quot;coins&quot;: [
+    &quot;must be greater than or equal to 0&quot;
+  ]
+}</pre>
+    <pre class="prettyprint">// Does not transform the knight
+POST /armies/1154/units/34746/transform
+422
+{}</pre>
+    <pre class="prettyprint">// Transforms a pikeman
+POST /armies/1147/units/34506/transform
+200
+{
+  &quot;id&quot;: 34506,
+  &quot;type&quot;: &quot;PikemanUnit&quot;,
+  &quot;strength&quot;: 5
+}</pre>
+
+
+
+
+</div>
+
+
+        
+      </div>
+    </div>
+    <hr>
+    <footer></footer>
+  </div>
+  <script type='text/javascript' src='../../apidoc/javascripts/bundled/jquery.js'></script>
+<script type='text/javascript' src='../../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+<script type='text/javascript' src='../../apidoc/javascripts/bundled/prettify.js'></script>
+<script type='text/javascript' src='../../apidoc/javascripts/apipie.js'></script>
+</body>
+</html>

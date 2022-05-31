@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API documentation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type='text/css' rel='stylesheet' href='../../apidoc/stylesheets/bundled/bootstrap.min.css'/>
+<link type='text/css' rel='stylesheet' href='../../apidoc/stylesheets/bundled/prettify.css'/>
+<link type='text/css' rel='stylesheet' href='../../apidoc/stylesheets/bundled/bootstrap-responsive.min.css'/>
+  <link type='text/css' rel='stylesheet' href='../../apidoc/stylesheets/application.css'/>
+  <!-- IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id='container'>
+        <ul class='breadcrumb'>
+  <li>
+    <a href='../../apidoc.html'>Armies 1.0</a>
+    <span class='divider'>/</span>
+  </li>
+  <li>
+    <a href='../../apidoc/units.html'>
+      Units
+      
+    </a>
+    <span class='divider'>/</span>
+  </li>
+  <li class='active'>index</li>
+  
+
+</ul>
+
+  <div class='page-header'>
+    <h1>
+      GET /units
+      <br>
+      <small>Lists all the units for an army</small>
+    </h1>
+  </div>
+
+<div>
+
+  
+
+
+
+
+  <h2>Examples</h2>
+    <pre class="prettyprint">// Lists the units for an army
+GET /armies/1137/units
+200
+[
+  {
+    &quot;id&quot;: 34206,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34207,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34208,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34209,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34210,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34211,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34212,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34213,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34214,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34215,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34216,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34217,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34218,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34219,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34220,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34221,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34222,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34223,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34224,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34225,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34226,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34227,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34228,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34229,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34230,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34231,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34232,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34233,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34234,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34235,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  }
+]</pre>
+
+
+
+
+</div>
+
+
+        
+      </div>
+    </div>
+    <hr>
+    <footer></footer>
+  </div>
+  <script type='text/javascript' src='../../apidoc/javascripts/bundled/jquery.js'></script>
+<script type='text/javascript' src='../../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+<script type='text/javascript' src='../../apidoc/javascripts/bundled/prettify.js'></script>
+<script type='text/javascript' src='../../apidoc/javascripts/apipie.js'></script>
+</body>
+</html>

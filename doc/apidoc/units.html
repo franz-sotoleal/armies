@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API documentation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/bundled/bootstrap.min.css'/>
+<link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/bundled/prettify.css'/>
+<link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/bundled/bootstrap-responsive.min.css'/>
+  <link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/application.css'/>
+  <!-- IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id='container'>
+        <ul class='breadcrumb'>
+  <li>
+    <a href='../apidoc.html'>Armies 1.0</a>
+    <span class='divider'>/</span>
+  </li>
+  <li class='active'>
+    Units
+    
+  </li>
+  
+</ul>
+
+<div class='page-header'>
+  <h1>
+    Units
+    <br>
+    <small></small>
+  </h1>
+</div>
+
+
+
+
+
+
+<div class='accordion' id='accordion'>
+
+    <hr>
+    <div class='pull-right small'>
+      <a href='../apidoc/units/index.html'> >>> </a>
+    </div>
+    <div>
+        <h2>
+          <a href='#description-index'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            GET /units
+          </a>
+          <br>
+          <small>Lists all the units for an army</small>
+        </h2>
+    </div>
+
+
+    <div id='description-index' class='collapse accordion-body'>
+      
+
+
+
+
+  <h3>Examples</h3>
+    <pre class="prettyprint">// Lists the units for an army
+GET /armies/1137/units
+200
+[
+  {
+    &quot;id&quot;: 34206,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34207,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34208,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34209,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34210,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34211,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34212,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34213,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34214,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34215,
+    &quot;type&quot;: &quot;PikemanUnit&quot;,
+    &quot;strength&quot;: 5
+  },
+  {
+    &quot;id&quot;: 34216,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34217,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34218,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34219,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34220,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34221,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34222,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34223,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34224,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34225,
+    &quot;type&quot;: &quot;ArcherUnit&quot;,
+    &quot;strength&quot;: 10
+  },
+  {
+    &quot;id&quot;: 34226,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34227,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34228,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34229,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34230,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34231,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34232,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34233,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34234,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  },
+  {
+    &quot;id&quot;: 34235,
+    &quot;type&quot;: &quot;KnightUnit&quot;,
+    &quot;strength&quot;: 20
+  }
+]</pre>
+
+
+
+
+    </div>
+    <hr>
+    <div class='pull-right small'>
+      <a href='../apidoc/units/show.html'> >>> </a>
+    </div>
+    <div>
+        <h2>
+          <a href='#description-show'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            GET /units/:id
+          </a>
+          <br>
+          <small>Shows a specific unit for an army</small>
+        </h2>
+    </div>
+
+
+    <div id='description-show' class='collapse accordion-body'>
+      
+
+
+
+
+  <h3>Examples</h3>
+    <pre class="prettyprint">// Shows a specific unit for an army
+GET /armies/1139/units/34266
+200
+{
+  &quot;id&quot;: 34266,
+  &quot;type&quot;: &quot;PikemanUnit&quot;,
+  &quot;strength&quot;: 5
+}</pre>
+
+
+
+
+    </div>
+    <hr>
+    <div class='pull-right small'>
+      <a href='../apidoc/units/train.html'> >>> </a>
+    </div>
+    <div>
+        <h2>
+          <a href='#description-train'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            POST /:id/train
+          </a>
+          <br>
+          <small>Trains a Unit</small>
+        </h2>
+    </div>
+
+
+    <div id='description-train' class='collapse accordion-body'>
+      
+
+
+
+
+  <h3>Examples</h3>
+    <pre class="prettyprint">// Does not find the unit to train
+POST /armies/1143/units/34416/train
+404</pre>
+    <pre class="prettyprint">// Does not train the unit (not enough coins)
+POST /armies/1146/units/34476/train
+422
+{
+  &quot;coins&quot;: [
+    &quot;must be greater than or equal to 0&quot;
+  ]
+}</pre>
+    <pre class="prettyprint">// Trains a Pikeman
+POST /armies/1141/units/34326/train
+200
+{
+  &quot;id&quot;: 34326,
+  &quot;type&quot;: &quot;PikemanUnit&quot;,
+  &quot;strength&quot;: 8
+}</pre>
+
+
+
+
+    </div>
+    <hr>
+    <div class='pull-right small'>
+      <a href='../apidoc/units/transform.html'> >>> </a>
+    </div>
+    <div>
+        <h2>
+          <a href='#description-transform'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            POST /:id/transform
+          </a>
+          <br>
+          <small>Transforms a Unit</small>
+        </h2>
+    </div>
+
+
+    <div id='description-transform' class='collapse accordion-body'>
+      
+
+
+
+
+  <h3>Examples</h3>
+    <pre class="prettyprint">// Does not find the unit to transform
+POST /armies/1149/units/34597/transform
+404</pre>
+    <pre class="prettyprint">// Does not transform the unit (not enough coins)
+POST /armies/1152/units/34657/transform
+422
+{
+  &quot;coins&quot;: [
+    &quot;must be greater than or equal to 0&quot;
+  ]
+}</pre>
+    <pre class="prettyprint">// Does not transform the knight
+POST /armies/1154/units/34746/transform
+422
+{}</pre>
+    <pre class="prettyprint">// Transforms a pikeman
+POST /armies/1147/units/34506/transform
+200
+{
+  &quot;id&quot;: 34506,
+  &quot;type&quot;: &quot;PikemanUnit&quot;,
+  &quot;strength&quot;: 5
+}</pre>
+
+
+
+
+    </div>
+</div>
+
+
+        
+      </div>
+    </div>
+    <hr>
+    <footer></footer>
+  </div>
+  <script type='text/javascript' src='../apidoc/javascripts/bundled/jquery.js'></script>
+<script type='text/javascript' src='../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+<script type='text/javascript' src='../apidoc/javascripts/bundled/prettify.js'></script>
+<script type='text/javascript' src='../apidoc/javascripts/apipie.js'></script>
+</body>
+</html>
