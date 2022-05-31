@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  apipie
   resources :armies do
     resources :units do
       post "train", action: :train

@@ -1,4 +1,5 @@
 class UnitsController < ApplicationController
+  include UnitsControllerDoc
   before_action :set_army
   before_action :set_unit, except: %i[index]
 
@@ -18,7 +19,7 @@ class UnitsController < ApplicationController
     if @army.save && @unit.save
       render json: @unit
     else
-      render json: @unit.errors, status: :unprocessable_entity
+      render json: @army.errors, status: :unprocessable_entity
     end
   end
 
@@ -27,13 +28,8 @@ class UnitsController < ApplicationController
     if @unit.transform && @army.save
       render json: @unit
     else
-      render json: @unit.errors, status: :unprocessable_entity
+      render json: @army.errors, status: :unprocessable_entity
     end
-  end
-
-  # DELETE /units/1
-  def destroy
-    @unit.destroy
   end
 
   private

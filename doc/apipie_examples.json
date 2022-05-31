@@ -1,0 +1,379 @@
+{
+  "armies#create": [
+    {
+      "title": "Creates an army",
+      "verb": "POST",
+      "path": "/armies",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": {
+        "army": {
+          "type": "EnglishArmy"
+        }
+      },
+      "response_data": {
+        "id": 1136,
+        "type": "EnglishArmy",
+        "coins": 2000
+      },
+      "code": 201,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "armies#index": [
+    {
+      "title": "Lists the armies",
+      "verb": "GET",
+      "path": "/armies",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": [
+        {
+          "id": 1130,
+          "type": "EnglishArmy",
+          "coins": 2000
+        },
+        {
+          "id": 1131,
+          "type": "ChineseArmy",
+          "coins": 2000
+        }
+      ],
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "armies#show": [
+    {
+      "title": "Shows a specific army",
+      "verb": "GET",
+      "path": "/armies/1132",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "id": 1132,
+        "type": "EnglishArmy",
+        "coins": 2000
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "units#index": [
+    {
+      "title": "Lists the units for an army",
+      "verb": "GET",
+      "path": "/armies/1137/units",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": [
+        {
+          "id": 34206,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34207,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34208,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34209,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34210,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34211,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34212,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34213,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34214,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34215,
+          "type": "PikemanUnit",
+          "strength": 5
+        },
+        {
+          "id": 34216,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34217,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34218,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34219,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34220,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34221,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34222,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34223,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34224,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34225,
+          "type": "ArcherUnit",
+          "strength": 10
+        },
+        {
+          "id": 34226,
+          "type": "KnightUnit",
+          "strength": 20
+        },
+        {
+          "id": 34227,
+          "type": "KnightUnit",
+          "strength": 20
+        },
+        {
+          "id": 34228,
+          "type": "KnightUnit",
+          "strength": 20
+        },
+        {
+          "id": 34229,
+          "type": "KnightUnit",
+          "strength": 20
+        },
+        {
+          "id": 34230,
+          "type": "KnightUnit",
+          "strength": 20
+        },
+        {
+          "id": 34231,
+          "type": "KnightUnit",
+          "strength": 20
+        },
+        {
+          "id": 34232,
+          "type": "KnightUnit",
+          "strength": 20
+        },
+        {
+          "id": 34233,
+          "type": "KnightUnit",
+          "strength": 20
+        },
+        {
+          "id": 34234,
+          "type": "KnightUnit",
+          "strength": 20
+        },
+        {
+          "id": 34235,
+          "type": "KnightUnit",
+          "strength": 20
+        }
+      ],
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "units#show": [
+    {
+      "title": "Shows a specific unit for an army",
+      "verb": "GET",
+      "path": "/armies/1139/units/34266",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "id": 34266,
+        "type": "PikemanUnit",
+        "strength": 5
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "units#train": [
+    {
+      "title": "Trains a Pikeman",
+      "verb": "POST",
+      "path": "/armies/1141/units/34326/train",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "id": 34326,
+        "type": "PikemanUnit",
+        "strength": 8
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "Does not find the unit to train",
+      "verb": "POST",
+      "path": "/armies/1143/units/34416/train",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": null,
+      "code": 404,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "Does not train the unit (not enough coins)",
+      "verb": "POST",
+      "path": "/armies/1146/units/34476/train",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "coins": [
+          "must be greater than or equal to 0"
+        ]
+      },
+      "code": 422,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "units#transform": [
+    {
+      "title": "Transforms a pikeman",
+      "verb": "POST",
+      "path": "/armies/1147/units/34506/transform",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "id": 34506,
+        "type": "PikemanUnit",
+        "strength": 5
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "Does not find the unit to transform",
+      "verb": "POST",
+      "path": "/armies/1149/units/34597/transform",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": null,
+      "code": 404,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "Does not transform the unit (not enough coins)",
+      "verb": "POST",
+      "path": "/armies/1152/units/34657/transform",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "coins": [
+          "must be greater than or equal to 0"
+        ]
+      },
+      "code": 422,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "Does not transform the knight",
+      "verb": "POST",
+      "path": "/armies/1154/units/34746/transform",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+      },
+      "code": 422,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ]
+}

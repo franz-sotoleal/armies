@@ -1,4 +1,5 @@
 class ArmiesController < ApplicationController
+  include ArmiesControllerDoc
   before_action :set_army, only: %i[show update destroy train]
 
   # GET /armies
