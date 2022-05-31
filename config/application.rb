@@ -24,7 +24,7 @@ module Armies
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
-    config.autoload_paths << "#{config.root}/doc"
+    config.autoload_paths << "#{config.root}/docs"
 
     config.generators.test_framework = :rspec
   end
