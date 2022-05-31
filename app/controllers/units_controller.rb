@@ -44,6 +44,6 @@ class UnitsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_unit
-    render status: :not_found unless (@unit = @army.units.find_by(id: params[:unit_id] || params[:id] ))
+    render status: :not_found unless (@unit = @army.units.find_by(id: params[:unit_id] || params[:id]))
   end
 end

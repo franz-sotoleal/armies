@@ -8,13 +8,11 @@ class KnightUnit < Unit
     army.subtract_coins 30
   end
 
-  def transform
-  end
+  def transform; end
 
   private
 
   def can_transform
-    # errors.add(:type, 'Invalid transformation')
-    errors[:type] =  'Invalid transformation'
+    errors.add(:type, 'Invalid transformation')
   end
 end

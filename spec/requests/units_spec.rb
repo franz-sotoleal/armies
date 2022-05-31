@@ -6,7 +6,7 @@ RSpec.describe '/units', type: :request do
 
   let!(:broke_army) { create(:chinese_army, coins: 1) }
   let!(:broke_army_unit) { broke_army.units.first }
-  let!(:broke_army_knight_unit) { broke_army.units.select {|u| u.is_a? KnightUnit}.first }
+  let!(:broke_army_knight_unit) { broke_army.units.select { |u| u.is_a? KnightUnit }.first }
 
   describe 'GET /index' do
     it 'renders a successful response' do
