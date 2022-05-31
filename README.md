@@ -1,5 +1,7 @@
 # Armies API
-For a detailed view of the endpoints, see the [documentation](franz-sotoleal.github.io/armies/)
+This is a simple API to solve the [Armies challenge](https://github.com/franz-sotoleal/armies/blob/main/challenge.pdf).
+
+For a detailed view of the endpoints, see the [documentation](https://franz-sotoleal.github.io/armies/)
 
 ## TODOS
 - [x] Create an army
