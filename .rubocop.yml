@@ -1,0 +1,23 @@
+AllCops:
+  Exclude:
+    - "**/db/migrate/*"
+    - "db/schema.rb"
+    - "**/Gemfile.lock"
+    - "**/Rakefile"
+    - "**/rails"
+    - "**/vendor/**/*"
+    - "**/spec_helper.rb"
+    - "node_modules/**/*"
+    - "bin/*"
+    - "config/*"
+
+  NewCops: enable
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
